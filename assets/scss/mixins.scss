@@ -1,7 +1,7 @@
-@mixin nameDesMixins {
-    color: darksalmon;
-    font-size: 20px;
-    text-decoration: underline;
+@mixin h2textStyle {
+    font-size: 1.8rem;
+    font-family: robotoBlack;
+    font-weight: bolder;
 }
 
 @mixin flexbetween {
