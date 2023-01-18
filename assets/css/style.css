@@ -1,3 +1,70 @@
+@font-face {
+  font-family: robotoregular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: robotobold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+body {
+  width: 1440px;
+  margin: 0 auto;
+  font-family: robotoregular, sans-serif;
+}
 
+header {
+  display: block;
+  flex-wrap: wrap;
+  background-image: url(../img/falling-person-withcloud.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 60%;
+  height: 60vh;
+}
+header #logo {
+  display: flex;
+  padding-left: 2vw;
+  padding-top: 3vh;
+}
+header #logo #elephantLogo {
+  width: 35px;
+  height: 65px;
+  margin-right: 1vw;
+}
+header #logo h2 {
+  font-size: 1.3rem;
+  font-family: robotobold;
+  line-height: 16px;
+}
+header #logo h2 span {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+header #howTo {
+  width: 500vw;
+  margin-left: 10vw;
+  margin-top: 20vh;
+}
+header #howTo h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+header #howTo #challenge {
+  font-size: 1.3rem;
+  margin-bottom: 8vh;
+}
+header #howTo #challenge img {
+  width: 30px;
+}
+header #howTo #seeMore {
+  color: #ff3571;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* BILDER COLLAGE */
+#designExamples img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */

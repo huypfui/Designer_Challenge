@@ -1,3 +1,96 @@
+//========= GLOBAL SETTINGS ======== //
+
+
 // Font: Roboto
 // Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
+
+@font-face {
+    font-family: robotoregular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: robotobold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+    font-family: robotoregular,sans-serif;
+}
+
+
+@import "mixins.scss";
+
+//============= HEADER ==============//
+header {
+    display: block;
+    flex-wrap: wrap;
+    background-image: url(../img/falling-person-withcloud.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 60%;
+    height: 60vh;
+
+    // Logo section //
+    #logo{
+        display: flex;
+        padding-left: 2vw;
+        padding-top: 3vh;
+
+        #elephantLogo{
+            width: 35px;
+            height: 65px;
+            margin-right: 1vw;
+        }
+    
+        h2 {
+            font-size: 1.3rem;
+            font-family: robotobold;
+            line-height:16px;
+    
+            span {
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    // How To Text section //
+    
+    #howTo {
+
+        width: 500vw;
+        margin-left: 10vw;
+        margin-top: 20vh;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bolder;
+        }
+        #challenge {
+            font-size: 1.3rem;
+            margin-bottom: 8vh;
+                img {
+                    width: 30px;
+                }
+        }
+
+        #seeMore {
+            color: #ff3571;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+    }
+}
+
+//=============== MAIN PART ================//
+
+/* BILDER COLLAGE */
+
+#designExamples img {
+    width: 100%;
+}
 

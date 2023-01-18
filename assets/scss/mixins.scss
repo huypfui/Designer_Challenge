@@ -1,0 +1,10 @@
+@mixin nameDesMixins {
+    color: darksalmon;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+@mixin flexbetween {
+    display: flex;
+    justify-content: space-between;
+}
