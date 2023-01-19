@@ -13,7 +13,6 @@
 body {
   width: 1440px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 * {
@@ -25,34 +24,33 @@ body {
 }
 
 header {
-  display: block;
   background-image: url(../img/falling-person-withcloud.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 50%;
-  height: 70vh;
 }
 header #logo {
   display: flex;
-  padding-left: 10px;
+  padding-left: 2vw;
   padding-top: 3vh;
 }
 header #logo #elephantLogo {
+  position: fixed;
   width: 35px;
-  margin-right: 1vh;
 }
 header #logo h2 {
   font-size: 1.3rem;
   font-family: robotoBlack;
-  line-height: 16px;
+  line-height: 15px;
+  margin-left: 50px;
 }
 header #logo h2 span {
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 0.6rem;
 }
 header #howTo {
-  margin-left: 8vw;
-  margin-top: 22vh;
+  margin-left: 7vw;
+  margin-top: 18vh;
+  margin-bottom: 10vh;
 }
 header #howTo h1 {
   font-size: 4rem;
@@ -75,23 +73,197 @@ header #howTo #seeMore {
 /* BILDER COLLAGE */
 #designExamples img {
   width: 100%;
+  margin-bottom: 20vh;
 }
 
 /* EVERY IDEA SECTION */
 #everyIdea {
   display: flex;
+  justify-content: center;
+  align-items: baseline;
   margin: 0 auto;
-  justify-content: baseline;
-  width: 80%;
+  margin-bottom: 15vh;
 }
 #everyIdea #lightbulb {
-  width: 40%;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: robotoBlack;
   font-weight: bolder;
+  width: 50%;
+  margin-left: 220px;
+}
+#everyIdea #lightbulb img {
+  width: 10%;
 }
 #everyIdea #lightbulbText {
+  line-height: 1.6rem;
   width: 60%;
+  margin-right: 220px;
+}
+
+/* LEARNED A LOT SECTION */
+#learnedAlot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: robotoBlack;
+  font-weight: bolder;
+  margin-right: 440px;
+  margin-bottom: 15vh;
+}
+
+/* FOUR STEPS OF DESIGN SECTION */
+#stepsDesign {
+  flex-wrap: wrap;
+  gap: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20vh;
+}
+#stepsDesign article {
+  height: 100px;
+  width: 360px;
+}
+#stepsDesign article p {
+  line-height: 3vh;
+  font-size: 1rem;
+}
+#stepsDesign h2 {
+  font-size: 1rem;
+  font-family: robotoBlack;
+  margin-bottom: 1vh;
+}
+#stepsDesign #lightbulbIcon::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  translate: -40px 25px;
+  background: url(../img/lightbulb-icon.svg);
+}
+#stepsDesign #shareIcon::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  translate: -40px 25px;
+  background: url(../img/share-icon.svg);
+}
+#stepsDesign #heartIcon::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/Heart-Icon.svg);
+  width: 25px;
+  height: 25px;
+  translate: -40px 25px;
+}
+#stepsDesign #penIcon::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  translate: -40px 25px;
+  background: url(../img/pen-icon.svg);
+}
+
+/* ARE YOU READY SECTION */
+#areYouReady {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15vh;
+}
+#areYouReady h2 {
+  font-size: 4rem;
+  font-family: robotoBlack;
+  margin-bottom: 5vh;
+}
+#areYouReady p {
+  width: 60%;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+/* PICTOGRAMS AND TEXT */
+.pictoSection {
+  display: flex;
+  margin-bottom: 10vh;
+}
+
+.pictoSize {
+  width: 50%;
+  gap: 10px;
+  margin-right: 5vw;
+}
+
+.picto_numberSize {
+  color: #dddddd;
+  font-size: 5rem;
+  margin-bottom: 5vh;
+}
+
+.emojiSettings {
+  margin-bottom: 2vh;
+  width: 50px;
+}
+
+.picto_h2 {
+  font-size: 1.3rem;
+  font-family: robotoblack;
+  margin-bottom: 1.5vh;
+}
+
+.picto_p {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+#doYouLike {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15vh;
+}
+#doYouLike h2 {
+  font-size: 4rem;
+  font-family: robotoBlack;
+  margin-bottom: 3vh;
+}
+#doYouLike p {
+  font-size: 1.6rem;
+}
+#doYouLike input {
+  width: 35vw;
+  height: 7vh;
+  margin-bottom: 3vh;
+  text-align: center;
+  background-color: #FFF;
+  color: #dddddd;
+  font-size: 1.5rem;
+  border: 1px solid rgba(221, 221, 221, 0.5);
+  border-radius: 10px;
+}
+#doYouLike button {
+  width: 15vw;
+  height: 5vh;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  background-color: #ff3571;
+  color: #FFF;
+  font-size: 1.3rem;
+}
+
+footer p {
+  margin-bottom: 3vh;
+  font-size: 1rem;
+}
+footer p img {
+  margin-left: 1vw;
+  width: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
