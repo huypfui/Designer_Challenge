@@ -34,6 +34,7 @@ body {
 
 @import "variables.scss";
 @import "mixins.scss";
+@import "media-query";
 
 //============= HEADER ==============//
 header {
@@ -262,21 +263,21 @@ header {
         }
 
         input {
-            width: 35vw;
-            height: 7vh;
+            width: 600px;
+            height: 80px;
             margin-bottom: 3vh;
             text-align: center;
             background-color:#FFF;
             color: #dddddd;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             border: 1px solid rgba($color: #dddddd, $alpha: 0.5);
             border-radius: 10px;
             box-shadow: 2px 2px 50px 0px #dddddd;
         }
 
         button {
-            width:15vw;
-            height: 5vh;
+            width:250px;
+            height: 65px;
             border: 1px solid #FFF ;
             border-radius:5px;
             background-color: #ff3571;
@@ -303,5 +304,3 @@ header {
 
         }
     }
-
-    /* MEDIA QUERY */

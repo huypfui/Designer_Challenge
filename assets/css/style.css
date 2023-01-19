@@ -23,6 +23,7 @@ body {
   color: #0b0c17;
 }
 
+/* MEDIA QUERY */
 header {
   background-image: url(../img/falling-person-withcloud.png);
   background-repeat: no-repeat;
@@ -237,20 +238,20 @@ header #howTo #seeMore {
   font-size: 1.6rem;
 }
 #doYouLike input {
-  width: 35vw;
-  height: 7vh;
+  width: 600px;
+  height: 80px;
   margin-bottom: 3vh;
   text-align: center;
   background-color: #FFF;
   color: #dddddd;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border: 1px solid rgba(221, 221, 221, 0.5);
   border-radius: 10px;
   box-shadow: 2px 2px 50px 0px #dddddd;
 }
 #doYouLike button {
-  width: 15vw;
-  height: 5vh;
+  width: 250px;
+  height: 65px;
   border: 1px solid #FFF;
   border-radius: 5px;
   background-color: #ff3571;
@@ -270,7 +271,5 @@ footer p img {
   margin-left: 1vw;
   width: 30px;
 }
-
-/* MEDIA QUERY */
 
 /*# sourceMappingURL=style.css.map */
