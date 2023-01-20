@@ -10,15 +10,15 @@
   font-family: robotoBlack;
   src: url(../fonts/Roboto-Black.ttf);
 }
-body {
-  width: 1440px;
-  margin: 0 auto;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
   font-family: robotoRegular, sans-serif;
   color: #0b0c17;
 }
@@ -192,10 +192,16 @@ header #howTo #seeMore {
   margin-bottom: 10vh;
 }
 
-.pictoSize {
+.pictoSizeLeft {
   width: 50%;
   gap: 10px;
   margin-right: 5vw;
+}
+
+.pictoSizeRight {
+  width: 50%;
+  gap: 10px;
+  margin-left: 5vw;
 }
 
 .picto_numberSize {
